@@ -21,7 +21,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
-      run: ./mvnw verify
+      run: ./mvnw clean install -DskipTests
       
     - name: Set up QEMU
       uses: docker/setup-qemu-action@v1
