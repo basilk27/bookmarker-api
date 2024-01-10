@@ -27,8 +27,7 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            basilk27/bookmarker-api:latest-amd64
-            basilk27/bookmarker-api:latest-arm64
+            basilk27/bookmarker-api:latest
 
 # jobs:
 #   build:
