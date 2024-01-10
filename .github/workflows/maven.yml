@@ -30,7 +30,7 @@ jobs:
           platforms: linux/arm64
           push: true
           tags: |
-            http://docker.io/$IMAGE_NAME:$IMAGE_TAG
+            http://docker.io/${{ IMAGE_NAME }}:${{ IMAGE_TAG }}
 #           tags: |
 #             http://docker.io/${{ secrets.DOCKER_USERNAME }}/bookmarker-api:latest-arm64
           cache-from: type=gha
