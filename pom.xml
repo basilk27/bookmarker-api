@@ -128,7 +128,7 @@
                         </platforms>
                     </from>
                     <to>
-                        <image>${dockerImageName}</image>
+                        <image>docker.io/${dockerImageName}</image>
                         <tags>
                             <tag>latest</tag>
                             <tag>${project.version}</tag>
@@ -140,6 +140,15 @@
                         </ports>
                     </container>
                 </configuration>
+                <executions>
+                    <execution>
+                        <id>package</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>build</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
