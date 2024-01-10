@@ -27,8 +27,8 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            http://docker.io/basilk27/bookmarker-api:latest-amd64
-            http://docker.io/basilk27/bookmarker-api:latest-arm64
+            http://docker.io/${{ secrets.DOCKER_USERNAME }}/bookmarker-api:latest-amd64
+            http://docker.io/${{ secrets.DOCKER_USERNAME }}/bookmarker-api:latest-arm64
 
 
 # jobs:
