@@ -102,7 +102,6 @@
                     </excludes>
                 </configuration>
             </plugin>
-<!-- BMK
             <plugin>
                 <groupId>com.google.cloud.tools</groupId>
                 <artifactId>jib-maven-plugin</artifactId>
@@ -128,25 +127,13 @@
                             <tag>${project.version}</tag>
                         </tags>
                     </to>
-                    <containerizingMode>packaged</containerizingMode>
                     <container>
                         <ports>
                             <port>8080</port>
                         </ports>
-                        <formart>Docker</formart>
                     </container>
                 </configuration>
-                <executions>
-                    <execution>
-                        <id>package</id>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>build</goal>
-                        </goals>
-                    </execution>
-                </executions>
             </plugin>
--->
         </plugins>
     </build>
 
